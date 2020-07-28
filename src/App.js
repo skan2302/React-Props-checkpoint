@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import ProfileComponent from './profile/ProfileComponent';
 import './App.css';
 
+
+const profile= {fullname:"Mouhamed",bio:"blalalallalala",profession:"student"}
+  
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProfileComponent profile={profile}>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRc96kcLicYy25CFi7P_ocMargwSC_vjRxIMg&usqp=CAUs'alt='avatar'/>
+      </ProfileComponent>
     </div>
-  );
+  )
 }
+
 
 export default App;
